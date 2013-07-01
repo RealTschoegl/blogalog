@@ -7,5 +7,6 @@
 %h3 Blog Entries
 
 - @posts.each do |entry|
-  %h3= entry.title
-  %p= entry.body
+  = link_to entry.title, "post/#{entry.id}"
+
+ 

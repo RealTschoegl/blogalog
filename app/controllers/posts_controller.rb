@@ -6,6 +6,11 @@ class PostsController < ApplicationController
 	end
 
 	def show
+		@name = "Matthew Tschoegl"
 		@post = Post.find(params[:id])
+	end
+
+	def new
+		@post = Post.new
 	end
 end
